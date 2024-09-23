@@ -51,6 +51,13 @@
                         break;
                     case "4":
                         //metod för att dividera
+                        Console.WriteLine("var god skriv in två heltal som du vill dividera");
+                        int intOne = int.Parse(Console.ReadLine());
+                        int intTwo = int.Parse(Console.ReadLine());
+                        int Result = Division(intOne, intTwo); //metod för att multiplicera
+                        Console.WriteLine($"Resultat: {intOne} / {intTwo} = {Result}");
+                        Console.WriteLine("Tryck på valfri tangent för att fortsätta");
+                        Console.ReadKey();
                         break;
                     case "5":
                         Console.WriteLine("Tack för att du använde miniräknaren! Avslutar programmet..");
