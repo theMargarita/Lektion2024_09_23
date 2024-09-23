@@ -6,5 +6,10 @@
         {
 
         }
+        static int Division (int firstInt, int secondInt)
+        {
+            int result = (firstInt / secondInt);
+            return result;
+        }
     }
 }
