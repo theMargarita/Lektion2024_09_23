@@ -62,5 +62,10 @@
             int result = (addOne + addTwo);
             return result;
         }
+        static int subtraction(int subOne, int subTwo)
+        {
+            int result = (subOne - subTwo);
+            return result;
+        }
     }
 }
