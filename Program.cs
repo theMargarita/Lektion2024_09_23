@@ -52,12 +52,13 @@
                 }
             }
         }
-
+        // A method for multiplication.
         static int Multi (int firstInt, int secondInt)
         {
             int product = (firstInt * secondInt);
             return product;
         }
+        // A method for division.
         static int Division (int firstInt, int secondInt)
         {
             int result = (firstInt / secondInt);
