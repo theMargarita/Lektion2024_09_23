@@ -29,11 +29,12 @@
                         break;
                     case "2":
                         //metod för att subtrahera
+
                         Console.WriteLine("var god skriv in två heltal som du vill multiplicera");
-                        int subOneE = int.Parse(Console.ReadLine());
-                        int subTwoO = int.Parse(Console.ReadLine());
-                        int resultTwo = subtraction(subOneE, subTwoO);
-                        Console.WriteLine($"Resultet: {subOneE} + {subTwoO} = {resultTwo}");
+                        int subOne = int.Parse(Console.ReadLine());
+                        int subTwo = int.Parse(Console.ReadLine());
+                        int resultTwo = Subtraction(subOne, subTwo);
+                        Console.WriteLine($"Resultet: {subOne} + {subTwo} = {resultTwo}");
                         Console.WriteLine("Tryck på valfri tangent för att fortsätta");
                         Console.ReadKey();
                         break;
@@ -78,7 +79,7 @@
             int result = (addOne + addTwo);
             return result;
         }
-        static int subtraction(int subOne, int subTwo)
+        static int Subtraction(int subOne, int subTwo)
         {
             int result = (subOne - subTwo);
             return result;
