@@ -22,13 +22,13 @@
                         Console.WriteLine("var god skriv in två heltal som du vill multiplicera");
                         int addOne = int.Parse(Console.ReadLine());
                         int addTwo = int.Parse(Console.ReadLine());
-                        int result = Add(addOne,addTwo); //metod för att multiplicera
+                        int result = Add(addOne,addTwo);
                         Console.WriteLine($"Resultat: {addOne} + {addTwo} = {result}");
                         Console.WriteLine("Tryck på valfri tangent för att fortsätta");
                         Console.ReadKey();//metod för att addera
                         break;
                     case "2":
-                        //metod för att subtrahera
+                     //metod för att subtrahera
                         break;
                     case "3":
                         Console.WriteLine("var god skriv in två heltal som du vill multiplicera");
