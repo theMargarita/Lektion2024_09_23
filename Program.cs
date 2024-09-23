@@ -6,5 +6,11 @@
         {
 
         }
+
+        static int Multiplication (int firstInt, int secondInt)
+        {
+            int product = (firstInt * secondInt);
+            return product;
+        }
     }
 }
