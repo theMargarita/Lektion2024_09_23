@@ -6,7 +6,7 @@
         {
             bool isRunning = true;
             Console.WriteLine("Välkommen till miniräknaren!");
-            while (true)
+            while (isRunning)
             {
                 Console.WriteLine("Var god välj vad du vill göra");
                 Console.WriteLine("1. Addera");
