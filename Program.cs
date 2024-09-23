@@ -25,7 +25,13 @@
                         //metod för att subtrahera
                         break;
                     case "3":
-                        //metod för att multiplicera
+                        Console.WriteLine("var god skriv in två heltal som du vill multiplicera");
+                        int firstInt = int.Parse(Console.ReadLine());
+                        int secondInt = int.Parse(Console.ReadLine());
+                        int product = Multi(firstInt,secondInt); //metod för att multiplicera
+                        Console.WriteLine($"Resultat: {firstInt} * {secondInt} = {product}");
+                        Console.WriteLine("Tryck på valfri tangent för att fortsätta");
+                        Console.ReadKey();
                         break;
                     case "4":
                         //metod för att dividera
