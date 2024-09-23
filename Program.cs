@@ -22,22 +22,31 @@
                         Console.WriteLine("var god skriv in två heltal som du vill multiplicera");
                         int addOne = int.Parse(Console.ReadLine());
                         int addTwo = int.Parse(Console.ReadLine());
-                        int result = Add(addOne,addTwo); //metod för att multiplicera
+                        int result = Add(addOne, addTwo); //metod för att multiplicera
                         Console.WriteLine($"Resultat: {addOne} + {addTwo} = {result}");
                         Console.WriteLine("Tryck på valfri tangent för att fortsätta");
                         Console.ReadKey();//metod för att addera
                         break;
                     case "2":
                         //metod för att subtrahera
+                        Console.WriteLine("var god skriv in två heltal som du vill multiplicera");
+                        int subOne = int.Parse(Console.ReadLine());
+                        int subTwo = int.Parse(Console.ReadLine());
+                        int resultTwo = subtraction(subOne, subTwo);
+                        Console.WriteLine($"Resultet: {subOne} + {subTwo} = {resultTwo}");
+                        Console.WriteLine("Tryck på valfri tangent för att fortsätta");
+                        Console.ReadKey();
                         break;
+
                     case "3":
                         Console.WriteLine("var god skriv in två heltal som du vill multiplicera");
                         int firstInt = int.Parse(Console.ReadLine());
                         int secondInt = int.Parse(Console.ReadLine());
-                        int product = Multi(firstInt,secondInt); //metod för att multiplicera
+                        int product = Multi(firstInt, secondInt); //metod för att multiplicera
                         Console.WriteLine($"Resultat: {firstInt} * {secondInt} = {product}");
                         Console.WriteLine("Tryck på valfri tangent för att fortsätta");
                         Console.ReadKey();
+
                         break;
                     case "4":
                         //metod för att dividera
@@ -53,13 +62,13 @@
             }
         }
         // A method for multiplication.
-        static int Multi (int firstInt, int secondInt)
+        static int Multi(int firstInt, int secondInt)
         {
             int product = (firstInt * secondInt);
             return product;
         }
         // A method for division.
-        static int Division (int firstInt, int secondInt)
+        static int Division(int firstInt, int secondInt)
         {
             int result = (firstInt / secondInt);
             return result;
