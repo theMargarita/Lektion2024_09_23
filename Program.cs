@@ -34,7 +34,7 @@
                         int subOne = int.Parse(Console.ReadLine());
                         int subTwo = int.Parse(Console.ReadLine());
                         int resultTwo = Subtraction(subOne, subTwo);
-                        Console.WriteLine($"Resultet: {subOne} + {subTwo} = {resultTwo}");
+                        Console.WriteLine($"Resultet: {subOne} - {subTwo} = {resultTwo}");
                         Console.WriteLine("Tryck på valfri tangent för att fortsätta");
                         Console.ReadKey();
                         break;
