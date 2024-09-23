@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             bool isRunning = true;
-            Console.WriteLine("Välkommen till miniräknaren!");
+            Console.WriteLine("Välkommen till den fantastiska miniräknaren!");
             while (isRunning)
             {
                 Console.WriteLine("Var god välj vad du vill göra");
