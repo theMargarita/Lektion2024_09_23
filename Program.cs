@@ -31,13 +31,13 @@
                         //metod för att dividera
                         break;
                     case "5":
+                        Console.WriteLine("Tack för att du använde miniräknaren! Avslutar programmet..");
                         isRunning = false;
+                        break;
                     default:
                         Console.WriteLine("Felaktig inmatning, försök igen");
                         break;
                 }
-
-                Console.WriteLine("hej");
             }
         }
     }
