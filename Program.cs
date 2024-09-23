@@ -6,5 +6,10 @@
         {
 
         }
+        static int Add(int addOne, int addTwo)
+        {
+            int result = (addOne + addTwo);
+            return result;
+        }
     }
 }
