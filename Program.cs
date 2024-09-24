@@ -13,69 +13,67 @@
                 Console.WriteLine("2. Subtrahera");
                 Console.WriteLine("3. Multiplicera");
                 Console.WriteLine("4. Dividera");
-                Console.WriteLine("5. Avsluta miniräknaren");
+                Console.WriteLine("5. Avsluta miniräknaren\n");
                 string input = Console.ReadLine();
 
                 switch (input)
                 {
                     case "1":
-                        Console.WriteLine("var god skriv in två heltal som du vill multiplicera");
+                        Console.WriteLine("\nVar god skriv in två heltal som du vill multiplicera");
                         int addOne = int.Parse(Console.ReadLine());
                         int addTwo = int.Parse(Console.ReadLine());
-                        int result = Add(addOne, addTwo); //metod för att multiplicera
+                        int result = Add(addOne, addTwo); 
                         Console.WriteLine($"Resultat: {addOne} + {addTwo} = {result}");
                         Console.WriteLine("Tryck på valfri tangent för att fortsätta");
-                        Console.ReadKey();//metod för att addera
+                        Console.ReadKey();
                         break;
-                    case "2":
-                        //metod för att subtrahera
 
-                        Console.WriteLine("var god skriv in två heltal som du vill multiplicera");
+                    case "2":
+                        Console.WriteLine("\nVar god skriv in två heltal som du vill multiplicera");
                         int subOne = int.Parse(Console.ReadLine());
                         int subTwo = int.Parse(Console.ReadLine());
                         int resultTwo = Subtraction(subOne, subTwo);
-                        Console.WriteLine($"Resultet: {subOne} - {subTwo} = {resultTwo}");
+                        Console.WriteLine($"Resultet: {subOne} - {subTwo} = {resultTwo}\n");
                         Console.WriteLine("Tryck på valfri tangent för att fortsätta");
                         Console.ReadKey();
                         break;
 
                     case "3":
-                        Console.WriteLine("var god skriv in två heltal som du vill multiplicera");
+                        Console.WriteLine("\nVar god skriv in två heltal som du vill multiplicera");
                         int firstInt = int.Parse(Console.ReadLine());
                         int secondInt = int.Parse(Console.ReadLine());
-                        int product = Multi(firstInt, secondInt); //metod för att multiplicera
-                        Console.WriteLine($"Resultat: {firstInt} * {secondInt} = {product}");
+                        int product = Multi(firstInt, secondInt); 
+                        Console.WriteLine($"Resultat: {firstInt} * {secondInt} = {product}\n");
                         Console.WriteLine("Tryck på valfri tangent för att fortsätta");
                         Console.ReadKey();
-
                         break;
+
                     case "4":
-                        //metod för att dividera
-                        Console.WriteLine("var god skriv in två heltal som du vill dividera");
+                        Console.WriteLine("\nVar god skriv in två heltal som du vill dividera");
                         int intOne = int.Parse(Console.ReadLine());
                         int intTwo = int.Parse(Console.ReadLine());
-                        int Result = Division(intOne, intTwo); //metod för att multiplicera
-                        Console.WriteLine($"Resultat: {intOne} / {intTwo} = {Result}");
+                        int resultOne = Division(intOne, intTwo); 
+                        Console.WriteLine($"Resultat: {intOne} / {intTwo} = {resultOne}");
                         Console.WriteLine("Tryck på valfri tangent för att fortsätta");
                         Console.ReadKey();
                         break;
+
                     case "5":
-                        Console.WriteLine("Tack för att du använde miniräknaren! Avslutar programmet..");
+                        Console.WriteLine("\nTack för att du använde miniräknaren! Avslutar programmet..\n");
                         isRunning = false;
                         break;
+
                     default:
-                        Console.WriteLine("Felaktig inmatning, försök igen");
+                        Console.WriteLine("Felaktig inmatning, försök igen\n");
                         break;
                 }
             }
         }
-        // A method for multiplication.
         static int Multi(int firstInt, int secondInt)
         {
             int product = (firstInt * secondInt);
             return product;
         }
-        // A method for division.
         static int Division(int firstInt, int secondInt)
         {
             int result = (firstInt / secondInt);
